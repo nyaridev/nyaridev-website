@@ -1,8 +1,28 @@
+/*=============== Import ===============*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+/*=============== Font Type ===============*/
+
+:root {
+  font-family: 'Fredoka', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: 'wdth' 400;
+  line-height: 1.5;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-weight: 400;
+  font-size: 16px;
+}
+
 /*=============== Font Size ===============*/
 
 :root {
-  font-size: 16px;
-
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
   --font-size-md: 1rem;
@@ -33,8 +53,6 @@
 /*=============== Font Weight ===============*/
 
 :root {
-  font-weight: 400;
-
   --font-weight-100: 100;
   --font-weight-200: 200;
   --font-weight-300: 300;
