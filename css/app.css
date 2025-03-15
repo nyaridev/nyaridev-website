@@ -40,11 +40,21 @@
   /* Animation */
 
   opacity: 0;
-  transition: opacity 1.2s ease-out;
 }
 
 #app.loaded .info-container {
-  opacity: 1;
+  opacity: 0.75;
+
+  animation: showInfo 0.65s ease-in;
+}
+
+@keyframes showInfo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.75;
+  }
 }
 
 /*=============== Info Card ===============*/
