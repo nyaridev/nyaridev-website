@@ -14,9 +14,9 @@
   color: rgba(255, 255, 255, 0.85);
 
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
 
-  user-select: none;
+  /* user-select: none; */
 }
 
 /*=============== Info Container ===============*/
@@ -28,6 +28,8 @@
   flex-direction: column;
 
   row-gap: 1.5rem;
+
+  margin: 0 1rem;
 
   /* Animation */
 
