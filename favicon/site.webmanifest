@@ -1,9 +1,7 @@
 {
   "name": "Nari | Socials",
   "short_name": "Nari | Socials",
-  "description": "All my socials, projects, and links in one place - Nari (nyaridev).",
-  "start_url": "/",
-  "scope": "/",
+  "description": "All my socials and links in one place. Nari (nyaridev) – Roblox, projects, and more.",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",

@@ -1,0 +1,124 @@
+:root {
+  background: rgb(13, 49, 78);
+  background: linear-gradient(167deg, rgba(13, 49, 78, 1) 0%, rgb(8, 31, 49) 100%);
+}
+
+/*=============== App ===============*/
+
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  color: rgba(255, 255, 255, 0.85);
+
+  width: 100%;
+  min-height: 100vh;
+
+  user-select: none;
+}
+
+/*=============== Info Container ===============*/
+
+.info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  row-gap: 1.5rem;
+
+  /* Animation */
+
+  opacity: 0;
+  transition: opacity 1.2s ease-out;
+}
+
+#app.loaded .info-container {
+  opacity: 1;
+}
+
+/*=============== Info Card ===============*/
+
+.info-card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row;
+
+  column-gap: 0.5rem;
+}
+
+.info-avatar {
+  width: 5rem;
+  height: 5rem;
+}
+
+.info-avatar img {
+  height: 5rem;
+  width: 5rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 1.05rem;
+
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
+}
+
+.info-title {
+  font-size: 2.65rem;
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
+}
+
+/*=============== Socials Container ===============*/
+
+.socials-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+
+  column-gap: 0.75rem;
+}
+
+.social-item {
+  position: relative;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: min(10vw, 2.25rem);
+  width: auto;
+
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
+  transition: 0.2s;
+}
+
+.social-icon img {
+  height: 100%;
+  width: auto;
+  filter: brightness(0) invert(1);
+  opacity: 85%;
+}
+
+.social-name {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-weight: 500;
+  opacity: 0;
+
+  transition: 0.2s;
+}
+
+.social-item:hover .social-name {
+  transform: translateX(-50%) translateY(50%);
+  opacity: 1;
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.85));
+}
+.social-item:hover .social-icon {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.85));
+}

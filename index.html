@@ -34,26 +34,110 @@
 
     <!-- Favicons -->
 
-    <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-chrome-192x192.png" />
-    <link rel="icon" type="image/png" sizes="512x512" href="./favicon/android-chrome-512x512.png" />
+    <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon/android-chrome-512x512.png" />
 
-    <link rel="apple-touch-icon" href="./favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
 
     <!-- Google Fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/typography.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/app.css" />
+
     <!-- Website -->
-    <script type="module" crossorigin src="/assets/index-BvD6rBQW.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-3PA_6RdK.css">
+    <script type="module" crossorigin src="/assets/index-LpGevd9b.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CGg3dyEJ.css">
   </head>
 
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <!-- Static Noise -->
+
+      <div id="stars-container"></div>
+
+      <!-- Info Container -->
+
+      <div class="info-container">
+        <!-- Info Card -->
+
+        <div class="info-card">
+          <div class="info-avatar">
+            <img src="/av.png" alt="avatar" draggable="false" />
+          </div>
+
+          <p class="info-title font-500">Nari | Socials</p>
+        </div>
+
+        <!-- Socials -->
+
+        <div class="socials-container">
+          <!-- YouTube -->
+          <div class="social-item">
+            <a href="https://www.youtube.com/@nyaridev" target="_blank" rel="noopener noreferrer">
+              <div class="social-icon">
+                <img src="/icons/youtube.svg" draggable="false" class="social-icon-img" data-scale="1.2" />
+              </div>
+            </a>
+
+            <p class="social-name">Youtube</p>
+          </div>
+
+          <!-- Instagram -->
+          <div class="social-item">
+            <a href="https://www.instagram.com/nyaridev/" target="_blank" rel="noopener noreferrer">
+              <div class="social-icon">
+                <img src="/icons/instagram.svg" draggable="false" class="social-icon-img" data-scale="1" />
+              </div>
+            </a>
+
+            <p class="social-name">Instagram</p>
+          </div>
+
+          <!-- X -->
+          <div class="social-item">
+            <a href="https://x.com/nyaridev" target="_blank" rel="noopener noreferrer">
+              <div class="social-icon">
+                <img src="/icons/x.svg" draggable="false" class="social-icon-img" data-scale="0.95" />
+              </div>
+            </a>
+
+            <p class="social-name">X</p>
+          </div>
+
+          <!-- Roblox -->
+          <div class="social-item">
+            <a href="https://www.roblox.com/users/4771447297/profile" target="_blank" rel="noopener noreferrer">
+              <div class="social-icon">
+                <img src="/icons/roblox.svg" draggable="false" class="social-icon-img" data-scale="1" />
+              </div>
+            </a>
+
+            <p class="social-name">Roblox</p>
+          </div>
+
+          <!-- Discord -->
+          <div class="social-item">
+            <a href="https://www.youtube.com/@nyaridev" target="_blank" rel="noopener noreferrer">
+              <div class="social-icon">
+                <img src="/icons/discord.svg" draggable="false" class="social-icon-img" data-scale="1.25" />
+              </div>
+            </a>
+
+            <p class="social-name">Discord</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>
