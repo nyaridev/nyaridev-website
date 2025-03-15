@@ -1,0 +1,24 @@
+/*=============== General ===============*/
+
+.static-noise {
+  opacity: 8%;
+  z-index: 999;
+  pointer-events: none;
+  position: fixed;
+
+  background-image: url('/noise/noise_2.png');
+  background-size: 35rem;
+  background-repeat: repeat;
+  inset: -2500%;
+
+  animation: shift 1s linear infinite both;
+}
+
+@keyframes shift {
+  0% {
+    transform: translateX(10%) translateY(10%);
+  }
+  100% {
+    transform: translateX(-10%) translateX(-10%);
+  }
+}

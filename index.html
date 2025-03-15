@@ -47,11 +47,96 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/typography.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/app.css" />
+
     <!-- Website -->
   </head>
 
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <!-- Static Noise -->
+
+      <div id="stars-container"></div>
+
+      <!-- Info Container -->
+
+      <div class="info-container">
+        <!-- Info Card -->
+
+        <div class="info-card">
+          <div class="info-avatar">
+            <img src="./av.png" alt="avatar" draggable="false" />
+          </div>
+
+          <p class="info-title font-500">Nari | Socials</p>
+        </div>
+
+        <!-- Socials -->
+
+        <div class="socials-container">
+          <!-- YouTube -->
+          <div class="social-item">
+            <a href="https://www.youtube.com/@nyaridev" target="_blank" rel="noopener noreferrer">
+              <div class="social-icon">
+                <img src="./icons/youtube.svg" draggable="false" class="social-icon-img" data-scale="1.2" />
+              </div>
+            </a>
+
+            <p class="social-name">Youtube</p>
+          </div>
+
+          <!-- Instagram -->
+          <div class="social-item">
+            <a href="https://www.instagram.com/nyaridev/" target="_blank" rel="noopener noreferrer">
+              <div class="social-icon">
+                <img src="./icons/instagram.svg" draggable="false" class="social-icon-img" data-scale="1" />
+              </div>
+            </a>
+
+            <p class="social-name">Instagram</p>
+          </div>
+
+          <!-- X -->
+          <div class="social-item">
+            <a href="https://x.com/nyaridev" target="_blank" rel="noopener noreferrer">
+              <div class="social-icon">
+                <img src="./icons/x.svg" draggable="false" class="social-icon-img" data-scale="0.95" />
+              </div>
+            </a>
+
+            <p class="social-name">X</p>
+          </div>
+
+          <!-- Roblox -->
+          <div class="social-item">
+            <a href="https://www.roblox.com/users/4771447297/profile" target="_blank" rel="noopener noreferrer">
+              <div class="social-icon">
+                <img src="./icons/roblox.svg" draggable="false" class="social-icon-img" data-scale="1" />
+              </div>
+            </a>
+
+            <p class="social-name">Roblox</p>
+          </div>
+
+          <!-- Discord -->
+          <div class="social-item">
+            <a href="https://www.youtube.com/@nyaridev" target="_blank" rel="noopener noreferrer">
+              <div class="social-icon">
+                <img src="./icons/discord.svg" draggable="false" class="social-icon-img" data-scale="1.25" />
+              </div>
+            </a>
+
+            <p class="social-name">Discord</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script type="module" src="./src/main.ts"></script>
   </body>
 </html>

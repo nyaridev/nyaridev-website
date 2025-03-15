@@ -1,0 +1,39 @@
+/*=============== General ===============*/
+
+#stars-container {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+
+#stars-container div {
+  /* background-color: red; */
+  z-index: -1;
+  filter: blur(4px);
+}
+
+.star {
+  opacity: 70%;
+  animation: showStar 1s ease-out;
+}
+.star.destroy {
+  opacity: 0%;
+  animation: hideStar 1s ease-out;
+}
+
+@keyframes showStar {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 70%;
+  }
+}
+@keyframes hideStar {
+  0% {
+    opacity: 70%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}

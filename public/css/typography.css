@@ -1,0 +1,97 @@
+/*=============== Import ===============*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+/*=============== Font Type ===============*/
+
+:root {
+  font-family: 'Fredoka', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: 'wdth' 400;
+  line-height: 1.5;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/*=============== Font Size ===============*/
+
+:root {
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.5rem;
+  --font-size-xxl: 2rem;
+}
+
+.font-xs {
+  font-size: var(--font-size-xs);
+}
+.font-sm {
+  font-size: var(--font-size-sm);
+}
+.font-md {
+  font-size: var(--font-size-md);
+}
+.font-lg {
+  font-size: var(--font-size-lg);
+}
+.font-xl {
+  font-size: var(--font-size-xl);
+}
+.font-xxl {
+  font-size: var(--font-size-xxl);
+}
+
+/*=============== Font Weight ===============*/
+
+:root {
+  --font-weight-100: 100;
+  --font-weight-200: 200;
+  --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+  --font-weight-800: 800;
+  --font-weight-900: 900;
+  --font-weight-1000: 1000;
+}
+
+.font-100 {
+  font-weight: var(--font-weight-100);
+}
+.font-200 {
+  font-weight: var(--font-weight-200);
+}
+.font-300 {
+  font-weight: var(--font-weight-300);
+}
+.font-400 {
+  font-weight: var(--font-weight-400);
+}
+.font-500 {
+  font-weight: var(--font-weight-500);
+}
+.font-600 {
+  font-weight: var(--font-weight-600);
+}
+.font-700 {
+  font-weight: var(--font-weight-700);
+}
+.font-800 {
+  font-weight: var(--font-weight-800);
+}
+.font-900 {
+  font-weight: var(--font-weight-900);
+}
+.font-1000 {
+  font-weight: var(--font-weight-1000);
+}
