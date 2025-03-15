@@ -19,6 +19,12 @@
   /* user-select: none; */
 }
 
+@supports (height: 100dvh) {
+  #app {
+    height: 100dvh;
+  }
+}
+
 /*=============== Info Container ===============*/
 
 .info-container {
