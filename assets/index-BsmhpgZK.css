@@ -1,0 +1,1 @@
+.static-noise{opacity:8%;z-index:999;pointer-events:none;position:fixed;background-image:url(/noise/noise_2.png);background-size:35rem;background-repeat:repeat;top:-2500%;right:-2500%;bottom:-2500%;left:-2500%;animation:shift 1s linear infinite both}@keyframes shift{0%{transform:translate(10%) translateY(10%)}to{transform:translate(-10%) translate(-10%)}}
