@@ -9,7 +9,7 @@
   background-image: url('/noise/noise_2.png');
   background-size: 65rem;
   background-repeat: repeat;
-  inset: -500%;
+  inset: -2500%;
 
   animation: shift 1s linear infinite both;
 }
