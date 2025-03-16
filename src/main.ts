@@ -1,5 +1,5 @@
 import { StaticNoise } from './modules/StaticNoise/main';
-import { StarGenerator } from './modules/StarGenerator/main';
+// import { StarGenerator } from './modules/StarGenerator/main';
 
 // =============== App Base
 
@@ -16,36 +16,35 @@ document.querySelectorAll('.social-icon-img').forEach((box) => {
 
 // =============== Stars
 
-const star1 = new StarGenerator({
-  parent: app,
-  images: [
-    './stars/star_1.png',
-    './stars/star_2.png',
-    './stars/star_3.png',
-    './stars/star_4.png',
-    './stars/star_5.png',
-    './stars/star_6.png',
-    './stars/star_7.png',
-    './stars/star_8.png',
-    './stars/star_9.png',
-    './stars/star_10.png',
-    './stars/star_11.png',
-    './stars/star_12.png',
-    './stars/star_13.png',
-    './stars/star_14.png',
-    './stars/star_15.png',
-    './stars/star_16.png',
-    './stars/star_17.png',
-    './stars/star_18.png',
-  ],
+// const star1 = new StarGenerator({
+//   parent: app,
+//   images: [
+//     './stars/star_1.png',
+//     './stars/star_2.png',
+//     './stars/star_3.png',
+//     './stars/star_4.png',
+//     './stars/star_5.png',
+//     './stars/star_6.png',
+//     './stars/star_7.png',
+//     './stars/star_8.png',
+//     './stars/star_9.png',
+//     './stars/star_10.png',
+//     './stars/star_11.png',
+//     './stars/star_12.png',
+//     './stars/star_13.png',
+//     './stars/star_14.png',
+//     './stars/star_15.png',
+//     './stars/star_16.png',
+//     './stars/star_17.png',
+//     './stars/star_18.png',
+//   ],
 
-  starCount: 20,
-  lifetime: 7500,
-  animationDuration: 1000,
-  spawnInterval: 500,
-});
-
-star1.start();
+//   starCount: 20,
+//   lifetime: 7500,
+//   animationDuration: 1000,
+//   spawnInterval: 500,
+// });
+// star1.start();
 
 // =============== Effects
 
