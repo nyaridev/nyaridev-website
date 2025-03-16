@@ -7,7 +7,7 @@ export class StaticNoise {
 
   constructor(parent: HTMLElement) {
     this.container = document.createElement('div');
-    this.container.classList.add('static-noise');
+    this.container.classList.add('sn-container');
     this.container.style.visibility = 'hidden';
     parent.appendChild(this.container);
   }

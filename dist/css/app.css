@@ -11,75 +11,51 @@
   justify-content: center;
   flex-direction: column;
 
-  row-gap: 1.5rem;
   color: rgba(255, 255, 255, 0.85);
 
   width: 100%;
-  min-height: 100vh;
-
-  user-select: none;
-}
-
-/*=============== Effects ===============*/
-
-.static-noise {
-  opacity: 8%;
-  z-index: 999;
-  pointer-events: none;
-  position: fixed;
-
-  background-image: url('/noise/noise_2.png');
-  background-size: 35rem;
-  background-repeat: repeat;
-  inset: -2500%;
-
-  animation: shift 1s linear infinite both;
-}
-
-@keyframes shift {
-  0% {
-    transform: translateX(10%) translateY(10%);
-  }
-  100% {
-    transform: translateX(-10%) translateX(-10%);
-  }
-}
-
-#stars-container {
   height: 100vh;
-  width: 100vw;
-  position: absolute;
+
+  /* user-select: none; */
 }
 
-#stars-container div {
-  /* background-color: red; */
-  z-index: -1;
-  filter: blur(4px);
+@supports (height: 100dvh) {
+  #app {
+    height: 100dvh;
+  }
 }
 
-.star {
-  opacity: 70%;
-  animation: showStar 1s ease-out;
-}
-.star.destroy {
-  opacity: 0%;
-  animation: hideStar 1s ease-out;
+/*=============== Info Container ===============*/
+
+.info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  row-gap: 1.5rem;
+  margin: 0 1rem;
+  filter: drop-shadow(0 0 80px rgba(255, 255, 255, 0.45));
+
+  z-index: 1;
+
+  /* Animation */
+
+  opacity: 0;
 }
 
-@keyframes showStar {
+#app.loaded .info-container {
+  opacity: 0.85;
+
+  animation: showInfo 0.65s ease-in;
+}
+
+@keyframes showInfo {
   0% {
-    opacity: 0%;
+    opacity: 0;
   }
   100% {
-    opacity: 70%;
-  }
-}
-@keyframes hideStar {
-  0% {
-    opacity: 70%;
-  }
-  100% {
-    opacity: 0%;
+    opacity: 0.85;
   }
 }
 
@@ -103,7 +79,7 @@
   height: 5rem;
   width: 5rem;
   aspect-ratio: 1 / 1;
-  border-radius: 1rem;
+  border-radius: 1.05rem;
 
   filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
 }

@@ -14,9 +14,15 @@
   color: rgba(255, 255, 255, 0.85);
 
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
 
-  user-select: none;
+  /* user-select: none; */
+}
+
+@supports (height: 100dvh) {
+  #app {
+    height: 100dvh;
+  }
 }
 
 /*=============== Info Container ===============*/
@@ -28,15 +34,29 @@
   flex-direction: column;
 
   row-gap: 1.5rem;
+  margin: 0 1rem;
+  filter: drop-shadow(0 0 80px rgba(255, 255, 255, 0.45));
+
+  z-index: 1;
 
   /* Animation */
 
   opacity: 0;
-  transition: opacity 1.2s ease-out;
 }
 
 #app.loaded .info-container {
-  opacity: 1;
+  opacity: 0.85;
+
+  animation: showInfo 0.65s ease-in;
+}
+
+@keyframes showInfo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.85;
+  }
 }
 
 /*=============== Info Card ===============*/

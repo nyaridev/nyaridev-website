@@ -1,13 +1,13 @@
 /*=============== General ===============*/
 
-.static-noise {
-  opacity: 8%;
+.sn-container {
+  opacity: 5%;
   z-index: 999;
   pointer-events: none;
   position: fixed;
 
   background-image: url('/noise/noise_2.png');
-  background-size: 35rem;
+  background-size: 65rem;
   background-repeat: repeat;
   inset: -2500%;
 

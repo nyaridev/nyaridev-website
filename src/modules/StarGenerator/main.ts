@@ -3,19 +3,19 @@ import './style.css';
 // =============== Module
 
 interface StarGeneratorOptions {
-  containerId?: string; // ID of the container div; default is 'stars-container'
-  images: string[]; // Array of image URLs/paths for the stars
+  parent: HTMLElement;
+  images: string[];
+
   starCount?: number; // Total number of stars to spawn; if omitted, stars spawn indefinitely
   lifetime?: number; // Time (ms) before a star adds the destroy class
   animationDuration?: number; // Time (ms) for the destroy animation before removal
   spawnInterval?: number; // Interval (ms) between spawning stars
-  starWidth?: string; // CSS width of the star (e.g., '50px')
-  starHeight?: string; // CSS height of the star (e.g., '50px')
 }
 
 export class StarGenerator {
   private container: HTMLElement;
   private images: string[];
+
   private starCount?: number;
   private lifetime: number;
   private animationDuration: number;
@@ -26,36 +26,27 @@ export class StarGenerator {
   private spawnedCount: number = 0;
 
   constructor(options: StarGeneratorOptions) {
-    const {
-      containerId = 'stars-container',
-      images,
-      starCount,
-      lifetime = 5000,
-      animationDuration = 1000,
-      spawnInterval = 1000,
-      starWidth = '50px',
-      starHeight = '50px',
-    } = options;
+    const { parent, images, starCount = 50, lifetime = 5000, animationDuration = 1000, spawnInterval = 1000 } = options;
 
-    const container = document.getElementById(containerId);
-    if (!container) {
-      throw new Error(`Container with id "${containerId}" not found.`);
-    }
-    this.container = container;
+    // Creating Container
+    this.container = document.createElement('div');
+    this.container.classList.add('sg-container');
+    parent.appendChild(this.container);
+
+    // Saving Options
     this.images = images;
     this.starCount = starCount;
     this.lifetime = lifetime;
     this.animationDuration = animationDuration;
     this.spawnInterval = spawnInterval;
-    this.starWidth = starWidth;
-    this.starHeight = starHeight;
+    this.starWidth = '50px';
+    this.starHeight = '50px';
   }
 
   // Private method to spawn a single star
   private spawnStar(): void {
     // If starCount is defined and reached, stop spawning further stars.
     if (this.starCount !== undefined && this.spawnedCount >= this.starCount) {
-      this.stop();
       return;
     }
 
@@ -104,10 +95,7 @@ export class StarGenerator {
 
   // Start spawning stars at the specified spawn interval
   public start(): void {
-    this.timerId = window.setInterval(
-      () => this.spawnStar(),
-      this.spawnInterval
-    );
+    this.timerId = window.setInterval(() => this.spawnStar(), this.spawnInterval);
   }
 
   // Stop spawning stars
