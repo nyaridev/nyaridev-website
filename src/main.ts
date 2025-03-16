@@ -39,10 +39,10 @@ const star1 = new StarGenerator({
     './stars/star_18.png',
   ],
 
-  starCount: 25,
-  lifetime: 3500,
+  starCount: 20,
+  lifetime: 7500,
   animationDuration: 1000,
-  spawnInterval: 200,
+  spawnInterval: 500,
 });
 
 star1.start();
